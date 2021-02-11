@@ -6,7 +6,6 @@ import {
   VERSION,
   ViewChild
 } from "@angular/core";
-import $ from "jquery";
 
 @Component({
   selector: "my-app",
@@ -15,7 +14,7 @@ import $ from "jquery";
 })
 export class AppComponent implements OnInit {
   name = "Angular " + VERSION.major;
-  @ViewChild("iframe") iframe: ElementRef;
+  // @ViewChild("iframe") iframe: ElementRef;
   url =
     "https://api.allorigins.win/get?url=" +
     encodeURIComponent("https://keepthescore.co/board/vpawwrumadr/") +
